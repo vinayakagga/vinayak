@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar12 {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.head-display12 {
+  width: 100%;
+  height: auto;
+  background-color: rgb(58, 57, 66);
+  text-align: left;
+  display: inline-flex;
+  position: sticky;
+  top: 0;
+}
+
+.medialogo {
+  display: inline-flex;
+  height: .7cm;
+  width: .7cm;
+  margin-inline: .1mm;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: .5cm;
+  margin-bottom: .5cm;
+  margin-right: .2cm;
+  align-self: center;
+  aspect-ratio: normal
+   ;
+}
+
+.li {
+  display: inline-flex;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 5pt;
+  border: 1pt solid rgb(114, 109, 109);
+}
+
+.li:hover {
+  color: rgb(114, 109, 109);
+}
+
+.ul12 {
+  display: inline-flex;
+  width: 54%;
+  justify-content: center;
+}
+
+.tags12 {
+  display: inline-flex;
+  font-size: 13pt;
+  margin-inline: .5cm;
+  align-items: center;
+}
+
+.nav12 {
+  display: inline-flex;
+  width: 8cm;
+  align-items: center;
+}
+
+.texbox12 {
+  display: inline-flex;
+  height: 15pt;
+  width: 5cm;
+  position: absolute;
+  left: 75%;
+}
+
+.btn {
+  display: inline-flex;
+  background-image: url("../img/search_logo.png");
+  height: 1cm;
+  width: 1cm;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 93%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 55%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: rgb(244, 244, 244);
+  }
+}
+
+.nametext {
+  display: flex;
+  background-image: url("../img/background_img.png");
+  height: 5cm;
+  width: calc(100%-8pt);
+  align-items: center;
+  justify-content: center;
+  margin: 4pt;
+  border-radius: 10pt;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.namee {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(128, 0, 255);
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .07em;
+  /* Adjust as needed */
+  animation:
+    typing 2s steps(32, end),
+    blink-caret .75s step-end infinite;
+  color: aliceblue;
+  font-size: 30pt;
+}
+
+.body {
+  background: rgb(240, 240, 240);
+}
+
+.shortabout {
+  height: 10cm;
+  width: calc(100%-8pt);
+  background-color: rgb(97, 123, 146);
+  margin: 4pt;
+  border-radius: 10pt;
+
+}
+
+.photoabout {
+  display: inline-block;
+  margin: 4pt;
+  margin-right: 0pt;
+  width: 35%;
+  height: calc(10cm - 8pt);
+  background-image: url('../img/vinayaklogo.png');
+  border-radius: 10pt;
+  background-size: 95%;
+  background-color: rgb(183, 179, 194);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.textabout {
+  position: absolute;
+  display: inline-block;
+  margin: 4pt;
+  height: calc(10cm - 8pt);
+  width: calc(65% - 22pt);
+  background: rgb(140, 182, 194);
+  border-radius: 10pt;
+}
+
+.projectsname {
+  text-align: center;
+  color: aliceblue;
+  font-size: 30pt;
+}
+
+.text1 {
+  font-size: 30px;
+  color: rgb(12, 61, 107);
+  font-family: 'PT Serif', serif;
+  padding: 3%
+}
+
+#myVideo {
+  position: relative;
+  height: max-content;
+  width: 100%;
+  z-index: 0;
+}
