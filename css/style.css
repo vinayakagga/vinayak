@@ -154,7 +154,7 @@
 .shortabout {
   height: 10cm;
   width: calc(100%-8pt);
-  background-color: rgb(97, 123, 146);
+  background-color: rgb(25,2,70);
   margin: 4pt;
   border-radius: 10pt;
 
@@ -181,7 +181,7 @@
   margin: 4pt;
   height: calc(10cm - 8pt);
   width: calc(65% - 22pt);
-  background: rgb(140, 182, 194);
+  background: rgb(100, 92, 116);
   border-radius: 10pt;
 }
 
@@ -193,7 +193,7 @@
 
 .text1 {
   font-size: 30px;
-  color: rgb(12, 61, 107);
+  color: white;
   font-family: 'PT Serif', serif;
   padding: 3%
 }
