@@ -147,7 +147,7 @@
   font-size: 30pt;
 }
 
-.body {
+.body12 {
   background: rgb(240, 240, 240);
 }
 
@@ -204,4 +204,14 @@
   width: 100%;
   z-index: 0;
 }
-
+.Featured_text{
+  text-align:center;
+  width: 74%;
+  color: black;
+}
+.featured_allheader{
+  color: aliceblue;background-color: rgba(20, 20, 21, 0.258) ;
+}
+.featured_alllower{
+  color: aliceblue;background-color: rgba(20, 20, 21, 0.200) ;
+}
