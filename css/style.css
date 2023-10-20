@@ -189,6 +189,8 @@
   text-align: center;
   color: aliceblue;
   font-size: 30pt;
+  overflow: hidden;
+  display: flex;
 }
 
 .text1 {
@@ -216,8 +218,16 @@
   color: aliceblue;background-color: rgba(20, 20, 21, 0.200) ;
 }
 .all-project-tags{
-  color: aquamarine;
+  color: rgb(0, 0, 0);
+  font-family: Alumni Sans Inline One;
+  font-size: 20pt;
+  text-align: center;
+  text-decoration: underline 1pt;
+  border: 1pt solid black;
 }
 .card-img-top {
   height: 157px;
+  margin: 3pt;
+  padding-right: 7pt;
+  object-fit:contain;
 }
