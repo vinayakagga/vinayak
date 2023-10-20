@@ -215,3 +215,9 @@
 .featured_alllower{
   color: aliceblue;background-color: rgba(20, 20, 21, 0.200) ;
 }
+.all-project-tags{
+  color: aquamarine;
+}
+.card-img-top {
+  height: 157px;
+}
