@@ -11,16 +11,18 @@
   top: 0;
   cursor: pointer;
   z-index: 5;
+  flex-wrap: nowrap;
 }
 
 .head-display12 {
   width: 100%;
   height: auto;
   background-color: rgb(58, 57, 66);
-  text-align: left;
-  display: inline-flex;
+  text-align: center;
+  display:inline-block;
   position: sticky;
   top: 0;
+  padding-left: 20pt;
 }
 
 .medialogo {
@@ -34,8 +36,8 @@
   margin-bottom: .5cm;
   margin-right: .2cm;
   align-self: center;
-  aspect-ratio: normal
-   ;
+  aspect-ratio: normal;
+
 }
 
 .li {
@@ -45,6 +47,8 @@
   text-align: center;
   padding: 5pt;
   border: 1pt solid rgb(114, 109, 109);
+  width: 3cm;
+  justify-content: center;
 }
 
 .li:hover {
@@ -52,28 +56,30 @@
 }
 
 .ul12 {
-  display: inline-flex;
-  width: 54%;
-  justify-content: center;
+  display:unset;
+  width: fit-content;
+  justify-content: right;
+  margin-top: 10pt;
 }
 
 .tags12 {
-  display: inline-flex;
+  display: inline;
   font-size: 13pt;
   margin-inline: .5cm;
   align-items: center;
 }
 
 .nav12 {
-  display: inline-flex;
-  width: 8cm;
+  display: none;
+  width:0cm;
   align-items: center;
+  visibility:hidden;
 }
 
 .texbox12 {
   display: inline-flex;
   height: 15pt;
-  width: 5cm;
+  width: 0cm;
   position: absolute;
   left: 75%;
 }
@@ -194,7 +200,7 @@
 }
 
 .text1 {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   font-family: 'PT Serif', serif;
   padding: 3%
@@ -212,10 +218,10 @@
   color: black;
 }
 .featured_allheader{
-  color: aliceblue;background-color: rgba(20, 20, 21, 0.258) ;
+  color: aliceblue;background-color: rgba(20, 20, 21, 0.553) ;
 }
 .featured_alllower{
-  color: aliceblue;background-color: rgba(20, 20, 21, 0.200) ;
+  color: aliceblue;background-color: rgba(20, 20, 21, 0.553) ;
 }
 .all-project-tags{
   color: rgb(0, 0, 0);
@@ -230,4 +236,22 @@
   margin: 3pt;
   padding-right: 7pt;
   object-fit:contain;
+}
+.anchor-display12 {
+  text-align: left;
+  width: min-content;
+  display: inline;
+  align-self: flex-start;
+  
+
+}
+.shadow-sm{
+  min-height:300pt;
+  height: auto;
+}
+.card-text{
+  color:rgb(47, 45, 59);
+  font-size:19px;
+  height: max-content;
+  
 }
