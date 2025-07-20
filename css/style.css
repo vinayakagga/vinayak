@@ -185,7 +185,7 @@ transform: scale(1.1);
   height: calc(10cm - 8pt);
   background-image: url('../img/vinayaklogo.png');
   border-radius: 10pt;
-  background-size: 95%;
+  background-size: 95%auto;
   background-color: rgb(183, 179, 194);
   background-repeat: no-repeat;
   background-position: center;
@@ -247,6 +247,10 @@ transform: scale(1.1);
   margin: 3pt;
   padding-right: 7pt;
   object-fit:contain;
+  transition:all .5s ease ;
+}
+.card-img-top:hover{
+  transform: scale(1.1);
 }
 .anchor-display12 {
   text-align: left;
