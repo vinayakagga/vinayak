@@ -185,7 +185,7 @@ transform: scale(1.1);
   height: calc(10cm - 8pt);
   background-image: url('../img/vinayaklogo.png');
   border-radius: 10pt;
-  background-size: 95%auto;
+  background-size: 95%;
   background-color: rgb(183, 179, 194);
   background-repeat: no-repeat;
   background-position: center;
