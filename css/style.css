@@ -19,7 +19,7 @@
   height: auto;
   background-color: rgb(53, 53, 57);
   text-align: center;
-  display:block;
+  display: block;
   position: sticky;
   top: 0;
   padding-left: 20pt;
@@ -40,9 +40,11 @@
   transition: all 0.3s ease;
 
 }
-.medialogo:hover{
-transform: scale(1.1);
+
+.medialogo:hover {
+  transform: scale(1.1);
 }
+
 .li {
   display: inline-flex;
   text-decoration: none;
@@ -62,7 +64,7 @@ transform: scale(1.1);
 }
 
 .ul12 {
-  display:inline-flex;
+  display: inline-flex;
   width: fit-content;
   justify-content: right;
   margin-top: 10pt;
@@ -77,9 +79,9 @@ transform: scale(1.1);
 
 .nav12 {
   display: none;
-  width:0cm;
+  width: 0cm;
   align-items: center;
-  visibility:hidden;
+  visibility: hidden;
 }
 
 .texbox12 {
@@ -106,28 +108,29 @@ transform: scale(1.1);
 
 /* The typing effect */
 @keyframes typing {
-  from {
-    width: 0;
+  0% {
+    width: 0%;
   }
 
-  to {
-    width:100%;
-    border-right-color:transparent;    
+  40%{
+    width: 38ch;
+  }
+  60%{
+    width:38ch;
+  }
+  100%{
+    width: 0%;
   }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
 
-  from,
-  to {
-    border-right-color: transparent;
-  }
-
-  50% {
-    border-right-color: rgb(244, 244, 244);
-  }
+  0%, 39.9%   { border-right-color: rgba(0, 0, 255, 0); }   /* Solid while typing */
+  40%, 60%    { border-right-color: rgb(244,244,244); } /* Blinking while paused */
+  60.1%,100%  { border-right-color: transparent; }      /* Hidden while deleting */
 }
+
 
 .nametext {
   display: flex;
@@ -143,25 +146,31 @@ transform: scale(1.1);
 }
 
 .namee {
-    overflow: hidden;
+    font-family: 'Fira Mono', 'Consolas', monospace; /* add monospace for realism */
+
+  overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: .15em solid rgb(128, 0, 255);
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
-  margin: 0 auto;
+  margin: 30rem;
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: .07em;
   /* Adjust as needed */
   animation:
-    typing 2s steps(34,end) forwards,
-    blink-caret .7s step-end infinite;
+    typing 4.5s steps(38, end) 0s forwards,
+    blink-caret .7s steps(38,end) infinite;
+  animation-delay: 0s 0s 2.5s;
+  animation-iteration-count: infinite ;
   color: white;
-  font-size: 30pt; 
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Small offset, slight blur, semi-transparent black */
+  font-size: 30pt;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  /* Small offset, slight blur, semi-transparent black */
   font-weight: bold;
   max-width: fit-content;
   width: 0;
+  text-align: left;
 }
 
 .body12 {
@@ -171,7 +180,7 @@ transform: scale(1.1);
 .shortabout {
   height: 10cm;
   width: calc(100%-8pt);
-  background-color: rgb(25,2,70);
+  background-color: rgb(25, 2, 70);
   margin: 4pt;
   border-radius: 10pt;
 
@@ -223,18 +232,24 @@ transform: scale(1.1);
   width: 100%;
   z-index: 0;
 }
-.Featured_text{
-  text-align:center;
+
+.Featured_text {
+  text-align: center;
   width: 74%;
   color: black;
 }
-.featured_allheader{
-  color: aliceblue;background-color: rgba(20, 20, 21, 0.553) ;
+
+.featured_allheader {
+  color: aliceblue;
+  background-color: rgba(20, 20, 21, 0.553);
 }
-.featured_alllower{
-  color: aliceblue;background-color: rgba(20, 20, 21, 0.553) ;
+
+.featured_alllower {
+  color: aliceblue;
+  background-color: rgba(20, 20, 21, 0.553);
 }
-.all-project-tags{
+
+.all-project-tags {
   color: rgb(0, 0, 0);
   font-family: Alumni Sans Inline One;
   font-size: 20pt;
@@ -242,36 +257,127 @@ transform: scale(1.1);
   text-decoration: underline 1pt;
   border: 1pt solid black;
 }
+
 .card-img-top {
   height: 157px;
   margin: 3pt;
   padding-right: 7pt;
-  object-fit:contain;
-  transition:all .5s ease ;
+  object-fit: contain;
+  transition: all 0.5s ease;
 }
-.card-img-top:hover{
+
+.card-img-top:hover {
   transform: scale(1.1);
 }
+
 .anchor-display12 {
   text-align: left;
   width: min-content;
   display: inline;
   align-self: flex-start;
-  
+
 
 }
-.shadow-sm{
-  min-height:300pt;
+
+.shadow-sm {
+  min-height: 300pt;
   height: auto;
 }
-.card-text{
-  color:rgb(47, 45, 59);
-  font-size:19px;
+
+.card-text {
+  color: rgb(47, 45, 59);
+  font-size: 19px;
   height: max-content;
   font-weight: 600;
   margin: .2rem;
-  
+
 }
-.container{
+
+.container {
   font-weight: 600;
+}
+
+.photoowner {
+  height: 35rem;
+  display: inline-flex;
+  margin: .5rem;
+  border-radius: 0.833rem;
+
+}
+
+.text2 {
+  font-size: 22px;
+  color: white;
+  padding: 3%;
+  line-height: 1.7;
+  display: inline-flex;
+  padding-bottom: 0%;
+}
+
+.textabout2 {
+  position: relative;
+  margin: 4pt;
+  height: max-content;
+  background: rgb(100, 92, 116);
+  border-radius: 10pt;
+  display: inline-flex;
+  line-height: 1.7;
+
+
+}
+
+.shortabout2 {
+  height: auto;
+  width: calc(100%-8pt);
+  background-color: rgb(25, 2, 70);
+  margin: 4pt;
+  border-radius: 10pt;
+  line-height: 1.7;
+
+}
+
+.heading2 {
+  font-size: 1.37rem;
+  color: rgb(252, 243, 243);
+  padding: 3%;
+  line-height: 30pt;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  line-height: 1.7;
+
+}
+
+.listabout {
+  font-size: 1.35rem;
+  color: white;
+  padding: 3%;
+  line-height: 30pt;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  list-style: outside;
+  margin-left: 7%;
+  line-height: 1.7;
+
+}
+
+.aboutline {
+  font-size: 1.35rem;
+  color: white;
+  padding: 3%;
+  line-height: 30pt;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin: 3%;
+  line-height: 1.7;
+}
+.projecttypecardimage {
+  height: 157px;
+  margin: 3pt;
+  padding-right: 7pt;
+  object-fit: contain;
+  transition: all 0.5s ease;
+}
+
+.projecttypecardimage:hover {
+  transform: scale(1.01);
 }
