@@ -1,3 +1,76 @@
+/* Contact Card Styles */
+.contact-card {
+  background: #f7f8fc;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(78,84,200,0.10);
+  padding: 2.5rem 2rem;
+  margin-top: 2rem;
+}
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact-text {
+  margin-bottom: 1.2rem;
+}
+.contact-list li {
+  margin-bottom: .7rem;
+  font-size: 1.08rem;
+}
+.contact-photo {
+  margin-bottom: 1rem;
+}
+/* About Me main content section styles */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+.about-block {
+  background: #f7f8fc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(78,84,200,0.07);
+  padding: 2.5rem 2rem 2rem 2rem;
+  color: #222;
+}
+.about-title {
+  color: #4e54c8;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.about-block:nth-child(2) .about-title {
+  color: #8f94fb;
+}
+.about-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.about-list {
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+}
+.about-list li {
+  margin-bottom: .5rem;
+  font-size: 1rem;
+}
+/* Blinking caret for typing animation */
+.blinking-caret {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  animation: blinkCaret 0.8s steps(1) infinite;
+}
+
+@keyframes blinkCaret {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -107,29 +180,7 @@
 }
 
 /* The typing effect */
-@keyframes typing {
-  0% {
-    width: 0%;
-  }
 
-  40%{
-    width: 38ch;
-  }
-  60%{
-    width:38ch;
-  }
-  100%{
-    width: 0%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-  0%, 39.9%   { border-right-color: rgba(0, 0, 255, 0); }   /* Solid while typing */
-  40%, 60%    { border-right-color: rgb(244,244,244); } /* Blinking while paused */
-  60.1%,100%  { border-right-color: transparent; }      /* Hidden while deleting */
-}
 
 
 .nametext {
@@ -143,34 +194,27 @@
   border-radius: 10pt;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-left: 3rem;
 }
 
 .namee {
     font-family: 'Fira Mono', 'Consolas', monospace; /* add monospace for realism */
-
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(128, 0, 255);
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 30rem;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .07em;
-  /* Adjust as needed */
-  animation:
-    typing 4.5s steps(38, end) 0s forwards,
-    blink-caret .7s steps(38,end) infinite;
-  animation-delay: 0s 0s 2.5s;
-  animation-iteration-count: infinite ;
-  color: white;
-  font-size: 30pt;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  /* Small offset, slight blur, semi-transparent black */
-  font-weight: bold;
-  max-width: fit-content;
-  width: 0;
-  text-align: left;
+    overflow: visible;
+    border-right: none;
+    white-space: nowrap;
+    color: white;
+    font-size: 30pt;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    max-width: 100%;
+    margin: 2rem 0;
+    letter-spacing: .07em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 120px; /* adjust as needed for vertical centering */
 }
 
 .body12 {
@@ -298,7 +342,9 @@
 }
 
 .photoowner {
-  height: 35rem;
+  height: 15rem;
+  width: 15rem;
+  max-width: 100%;
   display: inline-flex;
   margin: .5rem;
   border-radius: 0.833rem;
@@ -320,6 +366,7 @@
   height: max-content;
   background: rgb(100, 92, 116);
   border-radius: 10pt;
+  color: #222;
   display: inline-flex;
   line-height: 1.7;
 
