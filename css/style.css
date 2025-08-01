@@ -1,3 +1,163 @@
+/* Enhanced mobile responsiveness */
+@media (max-width: 576px) {
+  body, .body12 {
+    font-size: 0.97rem;
+    padding: 0;
+  }
+  .nametext {
+    height: auto;
+    padding: 0.5rem 0.2rem;
+    font-size: 1rem;
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;
+  }
+  .namee {
+    font-size: 1rem;
+    margin: 0.7rem 0;
+    min-height: 40px;
+    text-align: center;
+    flex-direction: column;
+  }
+  .shortabout2, .shortabout {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0.7rem 0.2rem;
+  }
+  .photoowner {
+    width: 6rem;
+    height: 6rem;
+    margin: 0.3rem auto;
+    display: block;
+  }
+  .about-content {
+    gap: 0.7rem;
+    margin-top: 0.7rem;
+    padding: 0 0.2rem;
+  }
+  .about-block {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.97rem;
+  }
+  .contact-card {
+    padding: 0.7rem 0.5rem;
+    margin-top: 0.7rem;
+  }
+  .contact-photo {
+    width: 6rem !important;
+    height: 6rem !important;
+    margin: 0.3rem auto;
+    display: block;
+  }
+  .medialogo {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-inline: 0.2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  .ul12 {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.3rem;
+    align-items: flex-start;
+  }
+  .li {
+    width: 100%;
+    margin-bottom: 0.3rem;
+    font-size: 0.97rem;
+    padding: 0.3rem;
+  }
+  .container {
+    padding: 0 0.2rem;
+    font-size: 0.97rem;
+  }
+  .footer, footer {
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+  .about-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .about-text, .about-list li {
+    font-size: 0.97rem;
+  }
+}
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .nametext {
+    height: auto;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .namee {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    min-height: 60px;
+    text-align: center;
+    flex-direction: column;
+  }
+  .shortabout2, .shortabout {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 1rem 0.5rem;
+  }
+  .photoowner {
+    width: 8rem;
+    height: 8rem;
+    margin: 0.5rem auto;
+    display: block;
+  }
+  .about-content {
+    gap: 1.2rem;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+  }
+  .about-block {
+    padding: 1.2rem 1rem;
+    font-size: 1rem;
+  }
+  .contact-card {
+    padding: 1.2rem 1rem;
+    margin-top: 1rem;
+  }
+  .contact-photo {
+    width: 8rem !important;
+    height: 8rem !important;
+    margin: 0.5rem auto;
+    display: block;
+  }
+  .medialogo {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-inline: 0.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .ul12 {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+    align-items: flex-start;
+  }
+  .li {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .container {
+    padding: 0 0.5rem;
+    font-size: 1rem;
+  }
+}
 /* Contact Card Styles */
 .contact-card {
   background: #f7f8fc;
