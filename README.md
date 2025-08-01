@@ -1,0 +1,10 @@
+--------------------------------------------------------------------------------------------------------------------------------
+********************************************************************************************************************************
+
+This project is a personal website to enhance my visibility over the web .
+
+
+Helping me use and understand web technologies and implementing them in real life .
+
+
+Although simple ,this website is a stepping stone in my career as a developer.
